@@ -288,23 +288,29 @@ p {
   color: #fff;
 }
 
-.save-inline-btn {
-  padding: 8px 18px;
-  font-size: 16px;
-  height: 40px;
-  margin-bottom: 0;
-  flex-shrink: 0;
-  margin-top: 18px;
-}
-.delete-btn:hover {
-  background: #b00;
-  color: #fff;
+.saved-recipe-item span:hover,
+.saved-recipe-item span:focus {
+  color: #ff7043;
+  background: #e0f7fa;
+  text-decoration: underline;
 }
 
-.save-inline-btn {
-  padding: 8px 18px;
+.delete-btn {
+  background: #e0f7fa;
+  border: none;
+  color: #ff7043;
+  padding: 7px 16px;
+  border-radius: 8px;
+  cursor: pointer;
   font-size: 16px;
-  height: 40px;
-  margin-bottom: 0;
-  flex-shrink: 0;
+  transition: background 0.15s, color 0.15s, transform 0.13s;
+  margin-left: 14px;
+  text-align: right;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(255,112,67,0.07);
+}
+.delete-btn:hover {
+  background: #ff7043;
+  color: #fff;
+  transform: scale(1.08);
 }
